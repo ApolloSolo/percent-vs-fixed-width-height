@@ -5,5 +5,5 @@ Notice how at full screen, the top box width (800px) is longer than the bottom b
 However, as the screen width shrinks, the bottom box will adjust its width to equal 80% of your viewport width.
 Notice the box width change as you shrink your viewport width.
 The top box with the fixed value of 800px clearly is not dynamic and will not adjust based upon viewport width.
-By defult, block level elements (like <div>) have a width of 100% of their parent and adjust automaticly to vp width.
+By defult, block level elements (like div) have a width of 100% of their parent and adjust automaticly to vp width.
 When we set a hard value width, such as pixle, that responsiveness is lost.
