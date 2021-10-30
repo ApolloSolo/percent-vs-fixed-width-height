@@ -1,0 +1,47 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+}
+
+.parent{
+    padding: 2rem;
+    background-color: rgb(3, 103, 185);
+    width: 800px; 
+    /*width will not be responsive*/
+    margin: 0 auto; 
+    /* centers parent: left and right margins are set by browse based on the container (body)*/
+}
+
+.child{
+    background-color: aqua;
+    height: 300px;
+    width: 650px; /*child will not adjust based on vp width*/
+    margin: 0 auto; /*centers child in parent*/
+}
+
+.parent2{
+    padding: 2rem;
+    background-color: rgb(3, 103, 185); 
+    width: 80%; 
+    /*width WILL be responsive*/
+    margin: 1rem auto; 
+    /* 1rem margin top and bottom to seperate the two parent divs*/
+}
+
+.child2{
+    background-color: aqua;
+    height: 300px;
+    width: 85%; /*child WILL adjust based on vp width*/
+    margin: 0 auto; /*centers child in parent*/ 
+}
+
+/*Notice how at full screen, the top box width (800px) is longer than the bottom box(80% screen width).
+However, as the screen width shrinks, the bottom box will adjust its width to equal 80% of your viewport width.
+Notice the box width change as you shrink your viewport width.
+The top box with the fixed value of 800px clearly is not dynamic and will not adjust based upon viewport width.
+By defult, block level elements (like <div>) have a width of 100% of their parent and adjust automaticly to vp width.
+When we set a hard value width, such as pixle, that responsiveness is lost.
+
+Remember, setting height in the say way will remove that defult responsiveness built in. 
+*/
